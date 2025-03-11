@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "GPT Pro Unlocker",
+    "version": "0.1.0",
+    "description": "Helps you unlock the full features of GPT Pro plan and completely free!",
+    "icons": {
+        "48": "assets/icon_extension.png"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "assets/icon_extension.png"
+    },
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    }
+}

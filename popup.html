@@ -1,0 +1,110 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+    <title>GPT Pro Unlocker Popup</title>
+</head>
+
+<body>
+    <video autoplay muted loop id="background-video" class="absolute top-0 left-0 w-full h-full object-cover">
+        <source src="assets/background_video.mp4" type="video/mp4">
+    </video>
+    <div class="relative w-full h-12 flex items-center justify-between px-4">
+        <img src="assets/logo_openfxt.png" alt="Logo" class="h-8">
+        <h1 class="text-lg font-semibold text-white animate-pulse" style="font-family: 'Kanit', sans-serif;"> GPT Pro
+            Unlocker </h1>
+        <button id="open-sidebar" class="text-white focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </div>
+    <div class="relative w-full flex items-center justify-center" style="height: 310px;">
+        <a href="#" class="btn btn-5 text-center" style="font-weight: 700;" id="unlock-gpt-pro">Unlock GPT Pro</a>
+    </div>
+    <div class="relative w-full flex items-center justify-center">
+        <p class="text-white text-sm font-semibold">Powered by <a target="_blank" href="https://openfxt.vercel.app"
+                class="text-red-400">OpenFXT</a></p>
+    </div>
+    <div id="sidebar"
+        class="absolute top-0 right-0 w-2/3 h-full bg-gray-800 z-10 transition-all duration-300 ease-in-out transform translate-x-full flex flex-col items-center"
+        style="opacity: 0.9;">
+        <h2 class="text-white text-xl font-semibold mt-4">More Features</h2>
+        <a href="https://openfxtgenai.apidog.io" target="_blank"
+            class="flex items-center text-white py-2 px-4 hover:bg-gray-700 w-full">
+            <svg style="margin-right: 5px;" width="18" height="18" viewBox="0 0 48 48"
+                xmlns="http://www.w3.org/2000/svg" fill="white">
+                <title>ai-solid</title>
+                <g id="Layer_2" data-name="Layer 2">
+                    <g id="invisible_box" data-name="invisible box">
+                        <rect width="48" height="48" fill="none" />
+                    </g>
+                    <g id="Q3_icons" data-name="Q3 icons">
+                        <g>
+                            <path
+                                d="M17.9,2h-.4L7.6,6.6a1,1,0,0,0-.6.9v7.4l-.6.5-4,3.3a.8.8,0,0,0-.4.8v9a.9.9,0,0,0,.4.8l4,3.3.6.5v7.4a1,1,0,0,0,.6.9l9.9,4.5h.4l.6-.2,4-2.7V25.5H21a1.5,1.5,0,0,1,0-3h1.5V4.9l-4-2.7ZM9,13.5l2.8,1.9a1.5,1.5,0,0,1,.4,2.1,1.4,1.4,0,0,1-1.2.7,1.1,1.1,0,0,1-.8-.3L9,17.1Zm-5,9H7.5a1.5,1.5,0,0,1,0,3H4Zm5,8.4,1.2-.8a1.4,1.4,0,0,1,2,.4,1.5,1.5,0,0,1-.4,2.1L9,34.5ZM19.5,18.6l-4,4v2.8l4,4v5.2l-3.4,3.5a2.1,2.1,0,0,1-1.1.4,2.1,2.1,0,0,1-1.1-.4,1.6,1.6,0,0,1,0-2.2l2.6-2.5V30.6l-4-4V21.4l4-4V14.6l-2.6-2.5a1.6,1.6,0,1,1,2.2-2.2l3.4,3.5Z" />
+                            <path
+                                d="M45.6,18.7l-4-3.3-.6-.5V7.5a1,1,0,0,0-.6-.9L30.5,2.1h-.4l-.6.2-4,2.7V22.5H27a1.5,1.5,0,0,1,0,3H25.5V43.1l4,2.7.6.2h.4l9.9-4.5a1,1,0,0,0,.6-.9V33.1l.6-.5,4-3.3a.9.9,0,0,0,.4-.8v-9A.8.8,0,0,0,45.6,18.7ZM39,17.1l-1.2.8a1.1,1.1,0,0,1-.8.3,1.4,1.4,0,0,1-1.2-.7,1.5,1.5,0,0,1,.4-2.1L39,13.5ZM28.5,29.4l4-4V22.6l-4-4V13.4l3.4-3.5a1.6,1.6,0,0,1,2.2,2.2l-2.6,2.5v2.8l4,4v5.2l-4,4v2.8l2.6,2.5a1.6,1.6,0,0,1,0,2.2,1.7,1.7,0,0,1-2.2,0l-3.4-3.5ZM39,34.5l-2.8-1.9a1.5,1.5,0,0,1-.4-2.1,1.4,1.4,0,0,1,2-.4l1.2.8Zm5-9H40.5a1.5,1.5,0,0,1,0-3H44Z" />
+                        </g>
+                    </g>
+                </g>
+            </svg>
+            OpenFXT Generative AI
+        </a>
+        <a href="https://github.com/NULLCommand1/NULLImplementer" target="_blank"
+            class="flex items-center text-white py-2 px-4 hover:bg-gray-700 w-full">
+            <svg style="margin-right: 5px;" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9 0V2H13L16 8.5L13 15H3L0 8.5L3 2H7V0H9ZM4.59794 11.7384L8 12.2618L11.4021 11.7384L11.0979 9.76163L8 10.2382L4.90206 9.76163L4.59794 11.7384ZM7 6.75C7 7.44036 6.44036 8 5.75 8C5.05964 8 4.5 7.44036 4.5 6.75C4.5 6.05964 5.05964 5.5 5.75 5.5C6.44036 5.5 7 6.05964 7 6.75ZM10.25 8C10.9404 8 11.5 7.44036 11.5 6.75C11.5 6.05964 10.9404 5.5 10.25 5.5C9.55964 5.5 9 6.05964 9 6.75C9 7.44036 9.55964 8 10.25 8Z"
+                    fill="#ffffff" />
+            </svg>
+            NULL Implementer
+        </a>
+        <a href="https://chatfxt.vercel.app" target="_blank"
+            class="flex items-center text-white py-2 px-4 hover:bg-gray-700 w-full">
+            <svg style="margin-right: 5px; " fill="#ffffff" height="18" width="18" version="1.1" id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"
+                xml:space="preserve">
+                <g>
+                    <g>
+                        <path d="M256,128.548c-20.214,0-36.659,16.444-36.659,36.659c0,20.215,16.445,36.66,36.659,36.66s36.659-16.445,36.659-36.66
+                            C292.659,144.992,276.214,128.548,256,128.548z" />
+                    </g>
+                </g>
+                <g>
+                    <g>
+                        <path
+                            d="M452.67,387.521v-25.757c15.199-6.505,25.876-21.605,25.876-39.156c0-23.474-19.098-42.572-42.572-42.572
+                            c-4.87,0-9.547,0.834-13.909,2.345l-62.87-35.637c17.763-22.433,28.384-50.767,28.384-81.538
+                            c0-72.553-59.026-131.578-131.578-131.578s-131.58,59.027-131.58,131.58c0,30.771,10.621,59.105,28.384,81.538l-62.871,35.636
+                            c-4.362-1.513-9.038-2.345-13.909-2.345c-23.474,0-42.572,19.098-42.572,42.572c0,17.55,10.677,32.651,25.876,39.156v25.757
+                            C25.417,395.153,0,425.492,0,461.676v16.696h152.051v-16.696c0-36.184-25.417-66.523-59.33-74.155v-25.757
+                            c15.197-6.505,25.875-21.605,25.875-39.156c0-5.756-1.154-11.245-3.233-16.256L177.8,270.96
+                            c17.65,13.085,38.67,21.867,61.503,24.772v91.789c-33.912,7.632-59.33,37.971-59.33,74.155v16.696h152.051v-16.696
+                            c0-36.184-25.417-66.523-59.33-74.155v-91.789c22.833-2.904,43.854-11.687,61.503-24.772l62.437,35.391
+                            c-2.079,5.012-3.233,10.502-3.233,16.256c0,17.55,10.677,32.651,25.875,39.156v25.757c-33.912,7.632-59.33,37.971-59.33,74.155
+                            v16.696H512v-16.696C512,425.492,486.583,395.153,452.67,387.521z M256,235.257c-38.626,0-70.05-31.425-70.05-70.052
+                            c0-38.627,31.425-70.049,70.05-70.049c38.626,0,70.051,31.423,70.051,70.051C326.051,203.834,294.626,235.257,256,235.257z" />
+                    </g>
+                </g>
+            </svg>
+            ChatFXT
+        </a>
+        <a href="https://github.com/NULLCommand1" target="_blank"
+            class="flex items-center text-white py-2 px-4 hover:bg-gray-700 w-full">
+            <svg style="margin-right: 5px;" fill="#ffffff" height="18" width="18" version="1.1" id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
+                xml:space="preserve">
+                <path d="M12 2C6.48 2 2 6.48 2 12c0 5.52 4.48 10 10 10s10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+            </svg>
+            Contact Us
+        </a>
+    </div>
+    <script src="scripts/popup.js"></script>
+</body>
+
+</html>
