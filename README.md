@@ -34,6 +34,9 @@ Copyright belongs to OpenFXT x NULLCommand1.
 ## Note
 - This extension is developed to help users experience the features of GPT Pro for free. We encourage users to purchase their own plan after experiencing and being satisfied with the service.
 
+## Support Us
+If you find this extension helpful, please consider giving our repository a star on GitHub. Your support motivates us to keep maintaining and improving this free project!
+
 ![Logo 1](https://openfxt.vercel.app/images/favicon.png)
 ![Logo 2](https://openfxt.vercel.app/images/brand.png)
 
